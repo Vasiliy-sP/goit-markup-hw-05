@@ -577,7 +577,6 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 72px 24px 24px 24px;
 }
 
 .backdrop.is-open {
@@ -598,7 +597,7 @@ li {
     min-height: 584px;
     border-radius: 4px;
     background-color: var(--color-dairy);
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -635,11 +634,12 @@ li {
     position: absolute;
     left: 16px;
     top: 50%;
+    transform: translateY(-50%);
 }
 
 .modal-close-btn:hover .close-modal-btn,
 .modal-close-btn:focus .close-modal-btn {
-    fill: #FFFFFF;
+    fill: var(--color-white);
 }
 
 .modal-text {
@@ -679,10 +679,69 @@ li {
     border-color: var(--color-lignt-slate);
 }
 
+.input-clas:focus + .close-modal-btn {
+    fill: var(--color-iris);
+}
+
 .input-clas:focus {
     border-color: var(--color-iris);
 }
 
 .div-svg {
     position: relative;
+    margin-bottom: 16px;
 }
+
+.t-area {
+    width: 100%;
+    height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    outline: transparent;
+    resize: none;
+    border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.t-area:focus {
+    border-color: var(--color-iris);
+}
+
+.div-privacy {
+    margin-bottom: 24px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.span-svg {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;   
+}
+
+.color-privacy {
+    color: var(--color-iris);
+}
+
