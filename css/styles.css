@@ -802,15 +802,11 @@ li {
     overflow: hidden;
 }
 
-.checkbox-modal:checked + .span-svg {
+.visually-hidden:checked + .label-klas .span-svg {
     background-color: var(--color-okean);
     border:none;
+    fill: var(--color-cloud);
 }
-
-.checkbox-modal:checked + .span-svg .close-modal-vector {
-    fill: var(--color-white);
-}
-
 
 .span-svg {
     width: 16px;
