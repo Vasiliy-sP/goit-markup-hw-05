@@ -802,7 +802,7 @@ li {
     overflow: hidden;
 }
 
-.visually-hidden:checked + .label-klas .span-svg {
+.visually-hidden:checked + .label .span-svg {
     background-color: var(--color-okean);
     border:none;
     fill: var(--color-cloud);
