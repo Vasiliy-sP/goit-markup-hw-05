@@ -526,6 +526,14 @@ li {
     max-width: 264px;
 }
 
+.social-footer {
+    margin-right: 80px;
+}
+
+.subscribe-div {
+    margin-bottom: 16px;
+}
+
 .media-s {
     font-weight: 500;
     font-size: 16px;
@@ -722,17 +730,6 @@ li {
     margin-bottom: 24px;
 
 }
-/* 
-.label-klas {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: var(--color-lignt-slate);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 24px;
-}  */
 
 .label {
     font-size: 12px;
@@ -833,5 +830,5 @@ display: inline-flex;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* margin: auto; */
 } 
-
