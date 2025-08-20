@@ -596,7 +596,7 @@ li {
     color: var(--color-white);
 }
 
-::placeholder {
+.footer-input::placeholder {
     color: var(--color-white);
 }
 
@@ -618,9 +618,19 @@ li {
     border-radius: 4px;
 }
 
+.footer-bth:hover, :focus {
+    background-color: var(--color-okean);
+}
+
 .svg-footer {
     margin-left: 16px;
+    fill: var(--color-white);
 }
+
+.subscribe-div {
+    margin-left: auto;
+}
+
 /*------------modal-window----------------------*/
 
 .backdrop { 
@@ -694,7 +704,6 @@ li {
 }
 
 .close-modal-btn {
-    /* transition: fill var(--transform); */
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: absolute;
     left: 16px;
@@ -741,6 +750,14 @@ li {
     margin-bottom: 4px;
 }
 
+.label-chek {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--color-lignt-slate);
+}
+
 .input-clas {
     width: 100%;
     height: 40px;
@@ -763,7 +780,7 @@ li {
 
 .div-svg {
     position: relative;
-    /* margin-bottom: 16px; */
+    margin-bottom: 16px;
 }
 
 .t-area {
@@ -780,6 +797,10 @@ li {
     outline: transparent;
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.t-area::placeholder {
+    color:  var(--navy-blue-modal);
 }
 
 .t-area:focus {
@@ -799,7 +820,7 @@ li {
     overflow: hidden;
 }
 
-.visually-hidden:checked + .label .span-svg {
+.visually-hidden:checked + .label-chek .span-svg {
     background-color: var(--color-okean);
     border:none;
     fill: var(--color-cloud);
@@ -817,6 +838,7 @@ align-items: center;
 justify-content: center;
 fill: transparent;
 display: inline-flex;
+margin-right: 8px;
 }
 
 .color-privacy {
@@ -824,11 +846,4 @@ display: inline-flex;
     text-decoration: underline;
 }
 
-.close-modal-vector {
-    position: absolute;
-    fill: transparent;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* margin: auto; */
-} 
+
